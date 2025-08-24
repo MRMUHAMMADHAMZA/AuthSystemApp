@@ -37,12 +37,60 @@ This project provides **Sign Up** and **Sign In** functionality with proper vali
 
 ---
 
-## 📂 Project Structure  
-AuthSystemApp/
-│── SignInWindow.xaml / .cs # Login screen
-│── SignUpWindow.xaml / .cs # Registration screen
-│── MainWindow.xaml / .cs # Dashboard after login
-│── DatabaseHelper.cs # SQL operations
-│── PasswordHelper.cs # SHA256 hashing
-│── Converters.cs # Value converters (error handling)
-│── App.xaml / App.xaml.cs # App entry point
+## 🗄️ Database Code  
+
+Run this script in **SQL Server Management Studio (SSMS):**  
+
+```sql
+CREATE DATABASE AuthSystemDB;
+
+USE AuthSystemDB;
+
+CREATE TABLE Users (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE,
+    Password NVARCHAR(100) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- View all users
+SELECT * FROM Users;
+
+
+▶️ How to Run & 👨‍💻 Developed By
+
+Clone the Repository
+
+git clone https://github.com/your-username/AuthSystemApp.git
+
+
+Open in Visual Studio
+
+Open the .sln file
+
+Set Up Database
+
+Open SQL Server Management Studio (SSMS)
+
+Run the provided SQL script
+
+Update Connection String
+
+Inside DatabaseHelper.cs, update your SQL Server instance name:
+
+private string connectionString = @"Server=YOUR_SERVER_NAME;Database=AuthSystemDB;Trusted_Connection=True;";
+
+
+Build & Run the App
+
+Press F5 in Visual Studio
+
+Sign Up a new user
+
+Sign In with your registered credentials
+
+👨‍💻 Developed By: Muhammad Hamza
+
+
+Would you like me to also **add a section for screenshots** (with placeholders) so you        
