@@ -57,37 +57,6 @@ CREATE TABLE Users (
 -- View all users
 SELECT * FROM Users;
 
-
-▶️ How to Run & 👨‍💻 Developed By
-
-Clone the Repository
-
-git clone https://github.com/your-username/AuthSystemApp.git
-
-
-Open in Visual Studio
-
-Open the .sln file
-
-Set Up Database
-
-Open SQL Server Management Studio (SSMS)
-
-Run the provided SQL script
-
-Update Connection String
-
-Inside DatabaseHelper.cs, update your SQL Server instance name:
-
-private string connectionString = @"Server=YOUR_SERVER_NAME;Database=AuthSystemDB;Trusted_Connection=True;";
-
-
-Build & Run the App
-
-Press F5 in Visual Studio
-
-Sign Up a new user
-
 Sign In with your registered credentials
 
 👨‍💻 Developed By: Muhammad Hamza
