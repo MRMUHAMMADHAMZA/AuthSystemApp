@@ -55,11 +55,4 @@ CREATE TABLE Users (
 );
 
 -- View all users
-SELECT * FROM Users;
-
-Sign In with your registered credentials
-
-👨‍💻 Developed By: Muhammad Hamza
-
-
-Would you like me to also **add a section for screenshots** (with placeholders) so you        
+SELECT * FROM Users;      
