@@ -68,8 +68,6 @@ git clone https://github.com/MRMUHAMMADHAMZA/AuthSystemApp.git
 ```
 Open in Visual Studio
 
-Open the .sln file
-
 Set Up Database
 
 Open SQL Server Management Studio (SSMS)
