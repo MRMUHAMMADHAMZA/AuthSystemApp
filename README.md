@@ -58,7 +58,7 @@ CREATE TABLE Users (
 SELECT * FROM Users;      
 
 ```
-▶️ How to Run & 👨‍💻 Developed By
+▶️ How to Run
 
 Clone the Repository
 
